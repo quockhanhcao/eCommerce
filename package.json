@@ -1,0 +1,23 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "This is my redemption for not doing enough side project when I was at university.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  }
+}
