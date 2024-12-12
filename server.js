@@ -11,8 +11,8 @@ const server = app.listen(PORT, () => {
 process.on('SIGINT', () => {
   server.close(() => {
     console.log('Server exit');
-    // database.disconnect();
-    mongoose.disconnect();
+    database.disconnect();
+    // mongoose.disconnect();
   });
   // notify something, later
 });
