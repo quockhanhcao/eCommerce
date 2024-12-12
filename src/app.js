@@ -9,7 +9,11 @@ app.use(morgan('dev'));
 app.use(helmet());
 app.use(compression());
 
-// Init db
+// init db connection
+const database = require('./dbs/init.mongo');
+database.getInstance();
+const { overloadChecking } = require('./helpers/check.connection');
+overloadChecking();
 
 // Init routers
 app.get('/', (req, res, next) => {
